@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onClickA"
+            android:onClick="onClickA"
+            android:text ="Standard"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="40dp"
+
+    />
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onClickB"
+            android:onClick="onClickB"
+            android:text="singleInstance"
+            android:layout_toRightOf="@+id/onClickA"
+            android:layout_alignTop="@+id/onClickA"
+
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onClickC"
+            android:onClick="onClickC"
+            android:text="singleTask"
+
+            android:layout_alignLeft="@+id/onClickA"
+           android:layout_below="@+id/onClickA"
+    />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onClickD"
+            android:onClick="onClickD"
+            android:text="singleTop"
+            android:layout_alignLeft="@+id/onClickB"
+            android:layout_below="@+id/onClickB"
+
+    />
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/onInfoClick"
+            android:onClick="onInfoClick"
+            android:text="@string/info"
+            android:layout_gravity="center_horizontal"
+
+
+    />
+
+
+</RelativeLayout>
